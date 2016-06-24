@@ -1,5 +1,20 @@
 # carton snapshot format: version 1.0
 DISTRIBUTIONS
+  Capture-Tiny-0.42
+    pathname: D/DA/DAGOLDEN/Capture-Tiny-0.42.tar.gz
+    provides:
+      Capture::Tiny 0.42
+    requirements:
+      Carp 0
+      Exporter 0
+      ExtUtils::MakeMaker 6.17
+      File::Spec 0
+      File::Temp 0
+      IO::Handle 0
+      Scalar::Util 0
+      perl 5.006
+      strict 0
+      warnings 0
   Clone-0.38
     pathname: G/GA/GARU/Clone-0.38.tar.gz
     provides:
