@@ -21,5 +21,5 @@ Install using with Carton
 
 	cpanm Carton
 	make
-	cp [directory where your path]/
+	cp kpcli [directory where your path]/
 
