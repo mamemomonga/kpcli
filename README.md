@@ -20,6 +20,8 @@ chmod +x kpcli.pl
 Install using with Carton
 
 	cpanm Carton
+	git clone git@github.com:mamemomonga/kpcli.git
+	cd kpcli
 	make
-	cp kpcli [directory where your path]/
+	cp kpcli [directory where your PATH]/
 
