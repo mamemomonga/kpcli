@@ -16,6 +16,7 @@
 ###########################################################################
 
 # The required perl modules
+use utf8;
 use strict;                                   # core
 use version;                                  # core
 use File::Spec;                               # core
@@ -39,6 +40,10 @@ use Term::ReadKey;           # non-core, libterm-readkey-perl on Ubuntu
 use Term::ShellUI;           # non-core, libterm-shellui-perl on Ubuntu
 use File::KeePass 0.03;      # non-core, libfile-keepass-perl on Ubuntu
                              #  - >=v0.03 needed due critical bug fixes
+
+binmode(STDIN, ":utf8");
+binmode(STDOUT,":utf8");
+binmode(STDERR,":utf8");
 
 # A developer convenience to force using a particular Term::ReadLine module
 our $FORCED_READLINE = undef;	# Auto-select
@@ -1010,6 +1015,9 @@ sub cli_cd {
   if (recent_sigint()) { return undef; } # Bail on SIGINT
 
   my $raw_pathstr = $params->{args}->[0];
+
+  utf8::decode($raw_pathstr);
+
   # "cd ."
   if ($raw_pathstr =~ m/^[.]$/) {
     return; # nothing to do
