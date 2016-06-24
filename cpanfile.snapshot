@@ -1,0 +1,55 @@
+# carton snapshot format: version 1.0
+DISTRIBUTIONS
+  Clone-0.38
+    pathname: G/GA/GARU/Clone-0.38.tar.gz
+    provides:
+      Clone 0.38
+    requirements:
+      ExtUtils::MakeMaker 0
+      Test::More 0
+  Crypt-Rijndael-1.13
+    pathname: L/LE/LEONT/Crypt-Rijndael-1.13.tar.gz
+    provides:
+      Crypt::Rijndael 1.13
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.006
+  File-KeePass-2.03
+    pathname: R/RH/RHANDOM/File-KeePass-2.03.tar.gz
+    provides:
+      File::KeePass 2.03
+    requirements:
+      Crypt::Rijndael 1.0
+      Digest::SHA 1.0
+      ExtUtils::MakeMaker 0
+      MIME::Base64 1.0
+  Sort-Naturally-1.03
+    pathname: B/BI/BINGOS/Sort-Naturally-1.03.tar.gz
+    provides:
+      Sort::Naturally 1.03
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5
+  Term-ReadLine-Gnu-1.34
+    pathname: H/HA/HAYASHI/Term-ReadLine-Gnu-1.34.tar.gz
+    provides:
+      Term::ReadLine::Gnu 1.34
+      Term::ReadLine::Gnu::AU 1.34
+      Term::ReadLine::Gnu::Var 1.34
+      Term::ReadLine::Gnu::XS 1.34
+    requirements:
+      ExtUtils::MakeMaker 0
+      perl 5.008001
+  Term-ShellUI-0.92
+    pathname: B/BR/BRONSON/Term-ShellUI-0.92.tar.gz
+    provides:
+      Term::ShellUI 0.92
+      Text::Shellwords::Cursor 0.81
+    requirements:
+      ExtUtils::MakeMaker 0
+  TermReadKey-2.33
+    pathname: J/JS/JSTOWE/TermReadKey-2.33.tar.gz
+    provides:
+      Term::ReadKey 2.33
+    requirements:
+      ExtUtils::MakeMaker 0
