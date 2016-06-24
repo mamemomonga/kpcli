@@ -6,4 +6,5 @@ requires 'Term::ShellUI';
 requires 'File::KeePass', '0.03';
 requires 'Term::ReadLine::Gnu';
 requires 'XML::Parser';
+requires 'Clipboard';
 requires 'Capture::Tiny';
