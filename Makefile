@@ -7,6 +7,6 @@ local:
 kpcli:
 	echo "#!/bin/sh" >> kpcli
 	echo "export PERL5LIB=$(CURDIR)/local/lib/perl5" >> kpcli
-	echo "exec $(CURDIR)/kpcli.pl $$@" >> kpcli
+	echo "exec $(CURDIR)/kpcli.pl \$$@" >> kpcli
 	chmod 755 kpcli
 
