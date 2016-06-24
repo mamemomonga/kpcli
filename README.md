@@ -16,3 +16,10 @@ chmod +x kpcli.pl
 
 ./kpcli.pl
 ```
+
+Install using with Carton
+
+	cpanm Carton
+	make
+	cp [directory where your path]/
+
